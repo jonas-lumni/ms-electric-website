@@ -1,0 +1,12 @@
+/*
+ * Eyebrows, stats and testimonial names were <h3> in WordPress and are <p> now, so each page
+ * has a clean heading outline (SEO guide 2.4). They keep the heading look: same declarations
+ * as Automatic.css' "h1, h2, h3..." rule, at the same element-level specificity, so any class
+ * or ID rule from the theme still wins exactly as it did on the <h3>.
+ */
+:where(.seo-heading-text):is(p) {
+  font-family: var(--heading-font-family);
+  line-height: var(--heading-line-height);
+  font-weight: var(--heading-font-weight);
+  text-wrap: var(--heading-text-wrap);
+}

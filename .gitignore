@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Secrets (security guide ENV-04): every .env file stays out of Git, except the template
+.env*
+!.env.example

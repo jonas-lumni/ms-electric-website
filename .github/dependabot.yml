@@ -1,0 +1,13 @@
+# Security guide DEP-03. Also enable in GitHub > Settings > Code security:
+# "Dependabot security updates" and "Secret scanning".
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule: { interval: "weekly" }
+    groups:
+      next-react:
+        patterns: ["next", "react", "react-dom", "@types/react", "@types/react-dom"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule: { interval: "weekly" }

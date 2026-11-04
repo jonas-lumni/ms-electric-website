@@ -1,0 +1,25 @@
+{
+  "name": "mse-electric-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node node_modules/next/dist/bin/next dev",
+    "build": "node node_modules/next/dist/bin/next build",
+    "start": "node node_modules/next/dist/bin/next start",
+    "clone": "node scripts/clone-wordpress.mjs",
+    "seo:check": "node scripts/seo-check.mjs"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "cheerio": "^1.0.0",
+    "typescript": "^5.9.3"
+  }
+}
